@@ -1,3 +1,42 @@
+@use "../custom" as * ;
+
+:root {
+    --bs-nav-link-font-size: 15px;
+    --bs-nav-link-font-weight: 600;
+    --bs-nav-link-color: #fff;
+}
+
+.navbar-brand{
+    font-weight: 800;
+    font-size: 40px;
+    color: var(--bs-nav-link-color);
+}
 .nav-link{
     text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    font-family: $font-family-montserrat;
 }
+.navbar-nav .show > .nav-link, .navbar-nav .nav-link.active,
+.nav-link:hover, .nav-link:focus{
+    background: linear-gradient(90deg, #193498 0%, #113CFC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header-btn{
+    background: $dark-gradient;
+    border: none;
+}
+.header-btns{
+    text-transform: uppercase;
+    padding: 10px 35px;
+    border-radius: 8px;
+}
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+
