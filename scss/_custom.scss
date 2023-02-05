@@ -1,0 +1,40 @@
+/* Theme Colors */ 
+/* ==============*/
+
+$headline-text-color: #373737;
+$body-text-color: #767676;
+$white: #fff;
+$black: #000;
+$light-gradient: linear-gradient(90.95deg, #69DADB 0.45%, #1597E5 103.39%);
+$dark-gradient: linear-gradient(90deg, #193498 0%, #113CFC 100%);
+
+
+
+$primary: #193498;
+$secondary: #1597E5;
+
+$section-vertical-space: 5rem;
+/* Theme Fonts */
+/*==============*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+$font-family-montserrat:  'Montserrat', sans-serif;
+$font-weight-normal: 500 ;
+$font-weight-bold: 700 ;
+
+$font-family-base: $font-family-montserrat;
+$font-size-base: 1.1rem;
+$font-weight-base: $font-weight-normal;
+$color-contrast-dark: $body-text-color;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+body{
+    color: $body-text-color;
+}
+
+.v-m-section-space{
+    margin-bottom: $section-vertical-space;
+}

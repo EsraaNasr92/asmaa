@@ -1,0 +1,21 @@
+@use "../custom" as * ;
+
+.main-title {
+    margin-bottom: 60px;
+}
+.main-title h5 {
+    background: $light-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /*text-fill-color: transparent;*/
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.main-title h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: $headline-text-color;
+}
